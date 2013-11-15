@@ -30,7 +30,6 @@ public class LoadPackageHook implements IXposedHookLoadPackage {
                                             @Override
                                             protected void afterHookedMethod(MethodHookParam param) throws Throwable {
                                                     FrameLayout v = (FrameLayout) param.thisObject;
-                                                    // dumpProperties(v);
                                                     Method lp = v.getClass().getMethod("getLayoutParams");
                                                     if (lp == null) return;
                                                     if (lp.invoke(v).toString().startsWith("android.view.ViewGroup$LayoutParams"))
