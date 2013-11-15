@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Hide Dockicons Text</string><string name="app_description">Hides text from icons displayed in the dock area</string>
+
+    
+    <string name="app_desc_long">Hides text from launcher icons (shortcuts) ONLY when they are placed in the dock</string>
+
+</resources>
